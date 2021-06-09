@@ -1,0 +1,27 @@
+<section>
+  <!-- image illustration-qualitative.png being to the extreme right from section      -->
+  <img src="../../assets/images/development.jpg" class="float-right"  alt=""/>
+  <!--  class content limits the width from the section to 1600px     -->
+  <div class="content">
+
+      <!-- 8 columns containing text describing my services incremented to the way we have the impression it's some sort of code          -->
+      <!-- first column containing the title from the page          -->
+      <div class="col col-5-12">
+          <h2>Ce que je peux accomplir</h2>
+      </div>
+
+      <div *ngFor="let service of services">
+        <div class="col col-6-12 {{service.incrementation}}">
+          <p>{{service.line}}</p>
+        </div>
+      </div>
+
+  </div>
+
+      <!-- image Improve-Customer-Service.png being to the extreme left from section      -->
+      <img src="../../assets/images/improve-services.jpg" class="customer-service"  alt=""/>
+
+  <!-- clear page disposition      -->
+  <div class="clear"></div>
+
+</section>

@@ -1,1 +1,273 @@
-/* You can add global styles to this file, and also import other style files */
+/* graphic chart */
+/*font-family: 'Roboto', sans-serif;*/
+/*colors: #fff, #C56C60, #000, #C4C4C4, #8294EF*/
+
+
+/************* GENERAL **************/
+
+/* body cover the entire page */
+body{
+  background-color: #C56C60;
+}
+
+/* main cover the main content from the page and includes the main characteristics. */
+main{
+  color: #ffffff;/* By default, font color is white  */
+  background-color: #C56C60;
+  width: 1920px;/* a very large width for a maximum visibility */
+  font-size: 48px;/* large page, so big font by default */
+  font-family: 'Roboto', sans-serif;/* default font */
+  font-weight: 500;/* font-weight to make each letter widder and visible */
+}
+
+header, section, footer{
+  background-color: #000000;/* 3 main sections are black and separate */
+}
+
+header{
+  height: 137px;
+  margin-bottom: 24px;/* margin-bottom to separate from section */
+}
+
+footer{
+  text-align: right;
+  margin-top: 24px;/* margin-top to separate from section */
+  padding: 10px;
+}
+
+p{
+  font-size: 24px;/* every paragraph has a default size of 24px which overcome the default font-size from the page */
+}
+
+/* each link is white and has no decoration */
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* links default color is white, but when the mouse is on the link (no click) the link turn into #C56C60*/
+a:hover{
+  color: #C56C60;
+}
+
+/* when the user is currently on the page which lead the navigation link, the link becomes bold */
+.current{
+  font-weight: bold;
+}
+
+/* clear page disposition */
+.clear{
+clear: both;
+}
+
+/* class to fix what can be put in section to that width, to fix the larger of what can be written */
+.content{
+  width: 1600px;
+  margin: auto;/* to not put the text to the border of section */
+  padding-bottom: 20px;
+}
+
+/* class to center the text */
+.center{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.align-middle{
+  vertical-align: middle;
+}
+
+/* class to change font color to #C56C60 */
+.brown-color{
+  color: #C56C60;
+}
+
+/* class to change font color to #8294EF */
+.blue-color{
+  color: #8294EF;
+}
+
+/* class to float the element to the right */
+.float-right{
+  float: right;
+}
+
+/* margin to space images from top of each other in page "travaux" */
+.margin-travaux{
+  margin-top: 11px;
+}
+
+/* class to align the text in "travaux" page in the middle of the space */
+.text-travaux{
+  position: relative;
+  top: -100px;
+}
+
+/* text from "travaux" text column ("ETC..." column) put in middle top of his column */
+.ETC{
+  position: relative;
+  top: 80px;
+}
+
+/* class to align the image "Capture-webdesign.PNG" to other images*/
+.capture-webdesign{
+  position: relative;
+  top: -245px;
+}
+
+/* class to put the image "Improve-Customer-Service.png" to the page's bottom left corner*/
+.customer-service{
+  position: relative;
+  right: 1292px;
+  top: 65px;
+}
+
+/* first incrementation to the text from "services" page (column width + 20px margin-right) */
+.incrementation-0{
+  position: relative;
+  left: 162px;
+}
+
+/* second incrementation to the text from "services" page */
+.incrementation-1-12{
+  position: relative;
+  left: 323px;
+}
+
+/* third incrementation to the text from "services" page */
+.incrementation-2-12{
+  position: relative;
+  left: 486px;
+}
+
+/* fourth incrementation to the text from "services" page */
+.incrementation-3-12{
+  position: relative;
+  left: 648px;
+}
+
+/* fifth incrementation to the text from "services" page */
+.incrementation-4-12{
+  position: relative;
+  left: 810px;
+}
+
+/* class to create a grey box to contain the visit card and the mail form from "contact" page */
+.grey-box{
+  background-color: #C4C4C4;
+  height: 340px;
+  padding: 5px;
+}
+
+/************* TITLES ****************/
+
+h1{
+  color: #C56C60;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h2{
+  color: #C56C60;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+/************** NAVIGATION ************/
+
+/* nav bar is slightly down to be at the middle down of header */
+nav{
+  position: relative;
+  top: 50px;
+}
+
+/* nav bar has no list decoration and is space to the borders of header */
+nav ul {
+list-style: none;
+margin: auto;
+}
+
+/* the nav bar is in one line and each link is 20px spaced from the other */
+nav ul li{
+display: inline;
+padding-right: 20px;
+}
+
+/* the first child from the element (the first link in nav) is more spaced from the others */
+nav ul :nth-child(1){
+padding-right: 100px;
+}
+
+/************* columns *************/
+
+/* each column float to the left and is 20px spaced from the other columns */
+.col{
+float: left;
+  margin-right: 20px;
+}
+
+.last{
+margin-right: 0px !important;/* margin right from the last column is 0 to prevent the column to reach the end from the page and go to the next line */
+}
+
+.col-0-12{
+  width: 142px;
+}
+
+.col-1-12{
+  width: 303px;
+}
+
+.col-2-12{
+  width: 466px;
+}
+
+.col-3-12{
+  width: 628px;
+}
+
+.col-4-12{
+  width: 789px;
+}
+
+.col-5-12{
+  width: 809px;
+}
+
+.col-6-12{
+  width: 780px;
+}
+
+.col-8-12{
+width: 1113px;
+}
+
+.col-12-12{
+width: 1600px;
+}
+
+/* FORM */
+
+/* form from "contact" page */
+form{
+  margin-top: -40px;
+}
+
+label{
+  font-size: 24px;
+  padding: 5px;;
+}
+
+.submit{
+  margin-top: -80px;
+}
+
+/* FOOTER */
+
+footer a{
+  color: #8294EF;/* footer links are in another color than navigation links */
+}
+
+footer p{
+  font-size: 48px;
+}

@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictPropertyInitialization": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -26,5 +27,21 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "dev": {
+    "application": "portfolio",
+    "databaseName": "script_client",
+    "url": "http://localhost:4200/",
+    "login":"root",
+    "password":"",
+    "port": 4200
+  },
+  "prod": {
+    "application": "portfolios",
+    "databaseName": "script_client",
+    "url": "https://localhost:4200/",
+    "login":"root",
+    "password":"",
+    "port": 4200
   }
 }

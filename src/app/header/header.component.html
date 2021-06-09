@@ -1,0 +1,22 @@
+<header>
+  <nav>
+      <!--   links to pages Accueil.html, presentation.html, travaux.html, services.html, contact.html        -->
+      <ul>
+          <li>
+              <a [routerLink]="'index'" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}" class="current">Accueil</a>
+          </li>
+          <li>
+              <a [routerLink]="'presentation'" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">Présentation</a>
+          </li>
+          <li>
+              <a [routerLink]="'travaux'" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">Travaux Réalisés</a>
+          </li>
+          <li>
+              <a [routerLink]="'services'" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">Services</a>
+          </li>
+          <li>
+              <a [routerLink]="'contact'" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">Contact</a>
+          </li>
+      </ul>
+  </nav>
+</header>
