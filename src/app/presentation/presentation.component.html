@@ -1,0 +1,49 @@
+<section>
+  <!--  class content limits the width from the section to 1600px     -->
+  <div class="content">
+    <div class="col col-4-12">
+      <h2>Formation</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Formation')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+      <h2>Informatique</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Informatique')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+      <h2>Compétences</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Compétences')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-4-12 last">
+      <h2>Langues</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Langues')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+      <h2>Centres d’intérêts</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Centres d’intérêts')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+      <h2>Qualités</h2>
+      <div *ngFor="let presentations of presentation">
+        <div *ngIf="checkTitle(presentations.title, 'Qualités')">
+          <p>{{presentations.description}}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- clear page disposition      -->
+    <div class="clear"></div>
+  </div>
+</section>

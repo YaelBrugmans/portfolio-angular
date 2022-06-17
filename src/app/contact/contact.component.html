@@ -1,0 +1,74 @@
+<section>
+  <!--  class content limits the width from the section to 1600px     -->
+  <div class="content">
+    <!-- 3 columns containing an image and a text each          -->
+    <!-- first column containing at first, image old-telephone.png and at second text "Téléphone mobile 0498/57 16 16 Numéro d’urgence 0474/89 40 61"         -->
+    <div class="col col-2-12 center">
+      <img src="../../assets/images/old-telephone.png"  alt="">
+      <h2>Téléphone mobile</h2>
+      <p>0498/57 16 16</p>
+      <h2>Numéro d’urgence</h2>
+      <p>0474/89 40 61</p>
+    </div>
+
+    <!-- second column containing at first, text "Adresse e-mail yaelbrugmans1998@gmail.com" and at second, image arobase.png         -->
+    <div class="col col-3-12 center">
+      <h2>Adresse e-mail</h2>
+      <p>yaelbrugmans1998@gmail.com</p>
+      <img src="../../assets/images/istockphoto-960880700-612x612.jpg"  alt="">
+    </div>
+
+    <!-- third and also last column containing at first, image old-telephone.png and at second text "Téléphone mobile 0498/57 16 16 Numéro d’urgence 0474/89 40 61"         -->
+    <div class="col col-2-12 center last">
+      <img src="../../assets/images/post-1019869_1280.jpg"  alt="">
+      <h2>Localité</h2>
+      <p>Rue Saint-Léonard, 281/11, Liège, 4000</p>
+    </div>
+
+    <!-- clear page disposition      -->
+    <div class="clear"></div>
+
+    <!-- a visit card represented by a grey box containing 2 columns. The first one having 2 images and the second one having a title and some text          -->
+    <div class="grey-box blue-color col col-6-12">
+      <!-- first column containing 2 images one on top of the other. In right order, "seraing-logo.png" and "technofutur-tic-Logo.png"    -->
+      <div class="col">
+        <img src="../../assets/images/logo-ipeps-seraing.png"  alt=""><br>
+        <img src="../../assets/images/Logo.png"  alt="">
+      </div>
+      <!-- second column containing some visit card informations              -->
+      <div class="col last">
+        <h2>Yael Brugmans</h2>
+        <p>Développeur junior</p>
+        <p>Rue Saint-Léonard, 281/11, Liège, 4000</p>
+        <p>04/98 57 16 16</p>
+      </div>
+    </div>
+
+    <!-- a grey box containing a title and an email form. The email form has an input object element, a textarea element for content and a submit button  -->
+    <div class="grey-box blue-color col col-6-12 last">
+      <h2>Questions ?</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contactForm">
+
+               <label for="email">Email</label>
+               <input type="email" [ngClass]="{'is-valid': this.contact.email && !isEmailValid()}" [(ngModel)]="contact.email" name="email" id="email" formControlName="email" required><br>
+
+               <label for="object">Objet</label>
+               <input type="text" [ngClass]="{'is-valid': this.contact.object}" [(ngModel)]="contact.object" name="object" id="object" formControlName="object"><br>
+
+               <label for="message">Contenu</label>
+               <textarea [ngClass]="{'is-valid': this.contact.message && !isContentValid()}" [(ngModel)]="contact.message" rows="5" class="form-control" id="message" formControlName="message"></textarea>
+               <p class="help-block text-danger"></p>
+               <br>
+
+               <div id="div-submit" class="dpl-grid form-element submit">
+                 <button type="submit" class="btn btn-primary" id="submit" [disabled]="!isFormValid()">Envoyer</button>
+               </div>
+
+      </form>
+    </div>
+
+    <!-- clear page disposition      -->
+    <div class="clear"></div>
+
+  </div>
+</section>

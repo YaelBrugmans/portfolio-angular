@@ -1,0 +1,31 @@
+<section>
+  <!--  class content limits the width from the section to 1600px     -->
+  <div class="content">
+    <!--  Title from the page introducing the cv          -->
+    <h1>Yael Brugmans<br>Développeur Novice</h1>
+    <!--  6 columns with a 20px space between. The first one contains an id image of me, the others contain one new columns with text aside : the column contains an image which represent an information and the text next to the column contains the information about me linked to the image     -->
+    <!--  first column containing the id image photo-yael-brugmans.JPG       -->
+    <div class="col col-4-12">
+      <img src="../../assets/images/DSCN0874.jpg" alt=""/>
+    </div>
+
+    <div *ngFor="let index of inde">
+      <div class="col col-4-12 last">
+        <!--  an image   -->
+        <div *ngIf="index.image">
+          <div class="col">
+            <!-- <img [appImage]="arobase.png"  alt="image not found"/> -->
+            <img src="../../assets/images/{{index.image}}"  alt="image not found"/>
+            <!-- {{index.image}} -->
+          </div>
+        </div>
+        <!-- informative text  -->
+        <p>{{index.title}} : {{index.response}}</p>
+      </div>
+    </div>
+
+
+    <!-- clear page disposition      -->
+    <div class="clear"></div>
+  </div>
+</section>
